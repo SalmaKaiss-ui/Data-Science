@@ -64,10 +64,39 @@ display(X.describe(include='all'))
 display(y.describe(include='all'))
 ```
 
+**Codes Python: Visualisation des statistiques descriptives pour X**
 
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+# Identify numerical and categorical columns in X
+numerical_cols = X.select_dtypes(include=['int64', 'float64']).columns
+categorical_cols = X.select_dtypes(include=['object', 'category']).columns
 
+print("Visualizing Numerical Features in X:")
+for col in numerical_cols:
+    plt.figure(figsize=(8, 5))
+    sns.histplot(X[col].dropna(), kde=True)
+    plt.title(f'Distribution of {col}')
+    plt.xlabel(col)
+    plt.ylabel('Frequency')
+    plt.show()
+```
+**Codes Python: Visualisation des statistiques descriptives pour Y**
 
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+print("Visualizing Target Variable y:")
+plt.figure(figsize=(6, 4))
+sns.countplot(data=y, x='y', palette='viridis')
+plt.title('Counts of Target Variable (y)')
+plt.xlabel('Subscription to Term Deposit')
+plt.ylabel('Count')
+plt.show()
+```
 
 
 
