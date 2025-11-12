@@ -55,8 +55,14 @@ print(bank_marketing.metadata)
 print(bank_marketing.variables)
 ```
 
+**Codes Python: Affichage des statistiques descriptives**
 
-
+```python
+import pandas as pd
+import pandas as pd
+display(X.describe(include='all'))
+display(y.describe(include='all'))
+```
 
 
 
