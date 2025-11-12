@@ -36,6 +36,10 @@ Cette base de données est très utilisée pour entraîner et tester des modèle
 ```python
 pip install ucimlrepo
 ```
+
+La commande pip install ucimlrepo installe la bibliothèque Python ucimlrepo, qui permet d’accéder facilement aux jeux de données du UCI Machine Learning Repository.
+
+
 **Codes Python: Importation de  dataset au code**
 
 ```python
@@ -54,6 +58,9 @@ print(bank_marketing.metadata)
 # variable information
 print(bank_marketing.variables)
 ```
+Ce code importe la fonction fetch_ucirepo pour télécharger le jeu de données Bank Marketing depuis la bibliothèque UCI Machine Learning Repository (identifiant 222).
+Les variables X et y contiennent respectivement les caractéristiques (features) et les cibles (targets) du jeu de données, tandis que les deux dernières lignes affichent les métadonnées et les informations sur les variables du dataset.
+
 
 **Codes Python: Affichage des statistiques descriptives**
 
@@ -63,6 +70,9 @@ import pandas as pd
 display(X.describe(include='all'))
 display(y.describe(include='all'))
 ```
+
+Ce code importe la bibliothèque pandas (deux fois, mais une seule suffit) et utilise la fonction describe() pour afficher des statistiques descriptives sur les données.
+La fonction display() montre un résumé complet (avec include='all') des caractéristiques X et de la variable cible y, incluant les valeurs manquantes, les moyennes, les fréquences, etc.
 
 **Codes Python: Visualisation des statistiques descriptives pour X**
 
@@ -83,6 +93,10 @@ for col in numerical_cols:
     plt.ylabel('Frequency')
     plt.show()
 ```
+Ce code utilise **Matplotlib** et **Seaborn** pour visualiser la distribution des variables **numériques** du jeu de données `X`.
+Il identifie d’abord les colonnes numériques, puis pour chacune, il affiche un **histogramme avec courbe de densité (kde)** afin d’observer la répartition des valeurs et repérer d’éventuelles tendances ou anomalies.
+
+
 **Codes Python: Visualisation des statistiques descriptives pour Y**
 
 ```python
@@ -97,6 +111,9 @@ plt.xlabel('Subscription to Term Deposit')
 plt.ylabel('Count')
 plt.show()
 ```
+
+Ce code visualise la **variable cible** `y` à l’aide d’un **diagramme en barres** pour montrer la fréquence de chaque catégorie (par exemple, “oui” ou “non” à la souscription d’un dépôt à terme).
+Il utilise **Seaborn** pour tracer le graphique (`countplot`) et **Matplotlib** pour personnaliser le titre et les axes.
 
 
 
