@@ -20,6 +20,7 @@ Ce jeu de données est souvent utilisé pour créer des modèles de classificati
 pip install ucimlrepo     
 ```
 
+# 📝 Interprétation 
 
 Le code utilise `fetch_ucirepo` pour télécharger automatiquement le dataset *Wine Quality* depuis l’UCI Repository.
 Il sépare ensuite les données en deux parties : `X` pour les variables explicatives et `y` pour la variable cible.
@@ -44,7 +45,7 @@ print(wine_quality.metadata)
 print(wine_quality.variables)    
 ```
 
-
+# 📝 Interprétation 
 
 Le code importe le modèle `KNeighborsClassifier`, un algorithme de classification basé sur les plus proches voisins.
 La commande `?KNeighborsClassifier` permet d’afficher sa documentation pour comprendre ses paramètres et son utilisation.
@@ -59,8 +60,9 @@ from sklearn.neighbors import KNeighborsClassifier
 
 # 1 Data analysis
 
-# # Load the data and show its summary:x
+## Load the data and show its summary:x
 
+# 📝 Interprétation 
 
 Le code commence par convertir les données originales du dataset *Wine Quality* en un DataFrame complet, incluant la colonne indiquant la couleur du vin.
 Il filtre ensuite uniquement les vins blancs et retire la colonne `color`, puis affiche un résumé du dataset ainsi que les premières lignes pour visualiser la structure des données.
@@ -87,8 +89,9 @@ print(df.head())
 ```
 
 
-# #  Form the arrays X ∈ R^N*d of the input variables and Y∈ R^N the output. What are the wine qualities and the related number of samples ?
+##  Form the arrays X ∈ R^N*d of the input variables and Y∈ R^N the output. What are the wine qualities and the related number of samples ?
 
+# 📝 Interprétation 
 
 Le code sépare les données en plaçant toutes les variables explicatives dans `X` en retirant la colonne `quality`, et en mettant la variable cible `quality` dans `Y`.
 Il affiche ensuite la distribution des différentes notes de qualité du vin pour montrer combien d’échantillons appartiennent à chaque catégorie.
@@ -102,8 +105,9 @@ Il affiche ensuite la distribution des différentes notes de qualité du vin pou
  print(Y.value_counts())
 ```
 
-# #  To form a binary classification problem, we group the data by quality level.
+##  To form a binary classification problem, we group the data by quality level.
 
+# 📝 Interprétation 
 
 Ce code transforme la variable `Y` en une classification binaire où les vins ayant une qualité inférieure ou égale à 5 sont étiquetés comme **mauvais** (`0`), tandis que les autres sont considérés comme **bons** (`1`).
 Il crée ainsi une nouvelle version simplifiée de la cible pour préparer un modèle de classification binaire.
@@ -115,7 +119,7 @@ Il crée ainsi une nouvelle version simplifiée de la cible pour préparer un mo
 ```
 
 
-# #   Perform a statistical analysis (mean, variance, correlation ...) of the input variables.
+##   Perform a statistical analysis (mean, variance, correlation ...) of the input variables.
  Comments on the results.
 
 
@@ -170,7 +174,7 @@ Ce heatmap montre les corrélations entre toutes les variables chimiques du vin 
 
 # 2 Classification
 
-# # Data Split
+## Data Split
 
 
 # 📝 Interprétation 
@@ -187,7 +191,7 @@ D’abord, il sépare un tiers des données pour le test, puis il divise le rest
  stratify=Ya)
 ```
 
-# # k nearest neighbor (k-NN) classification
+## k nearest neighbor (k-NN) classification
 
 # 📝 Interprétation 
 
@@ -224,7 +228,7 @@ Ensuite, une boucle teste plusieurs valeurs de `k` (1, 3, 5, …, 35), en évalu
  k_star = k_vector[ind_opt]
 ```
 
-# # Normalize or not normalize the data ?
+## Normalize or not normalize the data ?
 
 # 📝 Interprétation 
 
