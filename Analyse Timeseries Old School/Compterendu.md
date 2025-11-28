@@ -78,6 +78,10 @@ Le terme « consommation » n’est **pas explicitement détaillé** dans le tit
 <img width="1619" height="1163" alt="image" src="https://github.com/user-attachments/assets/f47430c4-4a23-49aa-8950-b88add24a67e" />
 
 
+
+
+
+
 **1. Résidus Standardisés au Fil du Temps (En Haut à Gauche)**  
 - Ce graphique montre les résidus (la différence entre les valeurs observées et les prédictions du modèle) au fil du temps.  
 - **Ce qu'il faut rechercher** : Idéalement, les résidus devraient fluctuer aléatoirement autour de zéro sans motif ou tendance discernable. Cela indique que le modèle a capturé la majeure partie de la structure sous-jacente des données. Si des motifs clairs apparaissent (par exemple, une variance croissante/décroissante, une saisonnalité), cela suggère que le modèle n'est peut-être pas entièrement spécifié ou qu'il a manqué des composants importants.
