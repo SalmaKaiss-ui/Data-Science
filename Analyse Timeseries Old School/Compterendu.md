@@ -1,6 +1,6 @@
 ## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
 
-<<img width="1028" height="1280" alt="image" src="https://github.com/user-attachments/assets/c4f07a8f-3136-4ee1-a38a-87d49b8a5bc1" />"/>
+<<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/c4f07a8f-3136-4ee1-a38a-87d49b8a5bc1" />"/>
  
  
  ## Salma Kaiss
