@@ -73,3 +73,21 @@ Le terme « consommation » n’est **pas explicitement détaillé** dans le tit
 
 ---
 
+### 🔍 Interprétation des Graphiques de Diagnostic
+
+**1. Résidus Standardisés au Fil du Temps (En Haut à Gauche)**  
+- Ce graphique montre les résidus (la différence entre les valeurs observées et les prédictions du modèle) au fil du temps.  
+- **Ce qu'il faut rechercher** : Idéalement, les résidus devraient fluctuer aléatoirement autour de zéro sans motif ou tendance discernable. Cela indique que le modèle a capturé la majeure partie de la structure sous-jacente des données. Si des motifs clairs apparaissent (par exemple, une variance croissante/décroissante, une saisonnalité), cela suggère que le modèle n'est peut-être pas entièrement spécifié ou qu'il a manqué des composants importants.
+
+**2. Histogramme et Estimation KDE (En Haut à Droite)**  
+- Ce graphique affiche la distribution des résidus, ainsi qu'une ligne d'estimation de la densité de noyau (KDE), qui est ensuite comparée à une distribution normale standard (N(0,1)).  
+- **Ce qu'il faut rechercher** : Les résidus devraient idéalement être distribués normalement avec une moyenne de zéro. Si l'histogramme suit de près la courbe de la distribution normale, cela suggère que les erreurs du modèle sont aléatoires et normalement distribuées, ce qui est une hypothèse pour de nombreux modèles statistiques. Des écarts par rapport à la normalité pourraient indiquer des problèmes avec les hypothèses du modèle ou la présence de valeurs aberrantes.
+
+**3. Graphique Q-Q Normal (En Bas à Gauche)**  
+- Le graphique Quantile-Quantile (Q-Q) compare les quantiles des résidus standardisés aux quantiles d'une distribution normale théorique.  
+- **Ce qu'il faut rechercher** : Si les résidus sont normalement distribués, les points sur le graphique Q-Q devraient s'aligner approximativement le long de la ligne droite à 45 degrés. Tout écart significatif par rapport à cette ligne (par exemple, des courbes en S, des queues épaisses) suggère que les résidus ne sont pas normalement distribués.
+
+**4. Corrélogramme (ACF) des Résidus (En Bas à Droite)**  
+- Ce graphique montre la fonction d'autocorrélation (ACF) des résidus standardisés. Il mesure la corrélation d'une série chronologique avec ses propres valeurs passées.  
+- **Ce qu'il faut rechercher** : Pour un modèle SARIMA bien ajusté, les résidus devraient ressembler à un bruit blanc, ce qui signifie qu'il ne devrait pas y avoir d'autocorrélation significative à un décalage quelconque. Toutes les barres (coefficients d'autocorrélation) devraient se situer dans la zone ombrée bleue (intervalles de confiance). Si des barres dépassent ces intervalles, cela suggère qu'il reste une autocorrélation dans les résidus que le modèle n'a pas capturée, indiquant que le modèle pourrait être amélioré (par exemple, en ajustant les termes AR, MA ou saisonniers).
+
