@@ -1,19 +1,15 @@
+## École Nationale de Commerce et de Gestion (ENCG) - 4ème Année
+
+## **Numéro appogée**  : 22004055
+
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/c4f07a8f-3136-4ee1-a38a-87d49b8a5bc1" />
+ 
+## **Dataset** : https://raw.githubusercontent.com/SalmaKaiss-ui/Data-Science/main/Social%20media%20analysis/sentimentdataset.csv
+
+ ## Salma Kaiss
+
 
 # 📊 Rapport Scientifique – Analyse de Sentiments sur Médias Sociaux
-
-
-<div align="left>
-
-**Auteur** : Kaiss Salma 
-
-**Numéro appogée**  : 22004055
-
-**Date** : 03 Décembre 2025  
-
-**Dataset** : https://raw.githubusercontent.com/SalmaKaiss-ui/Data-Science/main/Social%20media%20analysis/sentimentdataset.csv
-</div>
-
----
 
 ## 📋 Sommaire
 1. [Introduction](#1-introduction)  
