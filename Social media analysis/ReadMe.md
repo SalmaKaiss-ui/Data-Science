@@ -26,9 +26,12 @@
 
 # 1. 🎯 Introduction
 
-> **"Plus de 98 000 tweets par minute** – les réseaux sociaux sont une mine d'or émotionnelle brute." [web:15]
+> **"Plus de 98 000 tweets par minute** – les réseaux sociaux sont une mine d'or émotionnelle brute." 
 
-Ce rapport analyse le dataset **"sentimentdataset.csv"** (~**365 publications**), inspiré du notebook Kaggle *"Social Media-Analysis Sentiment"* d'Alkidiarete [web:3][attached_file:1]. 
+Ce rapport analyse le dataset **"sentimentdataset.csv"** (~**365 publications**), inspiré du notebook Kaggle *"Social Media-Analysis Sentiment"* d'Alkidiarete. 
+Les réseaux sociaux génèrent chaque jour un volume massif de textes contenant des opinions, des émotions et des jugements. L’analyse automatique de ces sentiments constitue un enjeu majeur pour différents domaines : marketing, détection des tendances, analyse politique, gestion de réputation, etc.
+
+Dans ce projet, nous avons travaillé sur un dataset de publications issues de plateformes sociales, comprenant des informations textuelles (contenu du message), des métadonnées (nombre de likes, retweets, pays, plateforme) et un label indiquant l’émotion ou le sentiment associé.
 
 ## 🔍 **Caractéristiques du Dataset**
 | **Aspect** | **Détails** |
@@ -48,7 +51,7 @@ Ce rapport analyse le dataset **"sentimentdataset.csv"** (~**365 publications**)
 ---
 
 ## ❓ **Problématique**
-> **Comment prédire automatiquement le sentiment d'une publication à partir de métadonnées structurées ?**
+> **Comment construire un modèle de Machine Learning capable de prédire automatiquement le sentiment d’un message en se basant sur ses caractéristiques numériques et catégorielles ?**
 
 ## 🎯 **Objectifs**
 - 🧹 Nettoyer & préparer les données
