@@ -15,3 +15,8 @@ path = kagglehub.dataset_download("navoneel/brain-mri-images-for-brain-tumor-det
 print("Path to dataset files:", path)
 
 
+## lien du rapport pdf: 
+
+https://drive.google.com/file/d/18HF_YeEFTV6n2TEUZVq5JLQbDqGN8g6-/view?usp=sharing
+
+
